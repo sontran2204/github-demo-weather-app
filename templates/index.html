@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Weather App (OpenWeatherMap)</h1>
+    <input id="city" placeholder="Enter city" />
+    <button type="button" onclick="getWeather()">Check</button>
+    <p id="result"></p>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
